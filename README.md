@@ -6,6 +6,11 @@
 
 <p align="center"> 🚀 Portfolio com projetos que fiz.</p>
 
+<p align="center">⚠️📢⚠️</p>
+<p align="center">OBS: Este README está em construção, aceito sugestões e criticas construtivas para melhorias, ficaria muito grato com a sua contribuição.</p>
+<p align="center">⚠️📢⚠️</p>
+
+
 ---
 
 ### 📝 - Descrição
