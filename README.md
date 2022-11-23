@@ -13,10 +13,20 @@
 
 ---
 
+
 ### 📝 - Descrição
 .
 .
 .
+
+---
+
+
+### ⚙️ -  Features
+
+- [ ] Acesso aos Projetos
+- [ ] Acesso aos contatos
+- [ ] Layout responsivo
 
 ---
 
@@ -28,7 +38,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
  - <img align="center" alt="css3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
  - <img align="center" alt="javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
  
- ---
+---
+
 
 ### 🧑 - Autor
 
