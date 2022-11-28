@@ -74,7 +74,7 @@ section {
     flex-direction: row;
 }
 
-.header ul li {
+.header ul li a {
     margin: 0 20px;
     color: #d3d3d3;
 }
@@ -86,18 +86,19 @@ section {
     flex-direction: row;
     align-items: center;
 }
+
 .inicio img {
     z-index: -1;
     width: auto;
     height: 550px;
 }
 
-.inicio .container h3{
+.inicio .container h3 {
     color: #f00400;
     font-size: 30px;
 }
 
-.inicio .container p{
+.inicio .container p {
     color: #d3d3d3;
     font-size: 17px;
     margin-bottom: 10px;
@@ -112,6 +113,7 @@ section {
     left: 0px;
     display: flex;
     z-index: -1;
+    transform: rotate(100deg);
 }
 
 .competencias {
@@ -126,19 +128,19 @@ section {
 .competencias h2 {
     color: #fff;
     font-size: 40px;
-    margin-bottom: 60px;  
+    margin-bottom: 60px;
 }
 
 .competencias .container {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 60px;    
+    margin-bottom: 60px;
 }
 
 .competencias .container .box {
     height: 280px;
-    width:250px;
+    width: 250px;
     display: block;
     padding-left: 30px;
     padding-top: 40px;
@@ -228,7 +230,7 @@ section {
 
 .projetos .container-projetos .box-projeto {
     height: 280px;
-    width: 350px;
+    width: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,4 +241,51 @@ section {
 
 .projetos .container-projetos .box-projeto img {
     margin-bottom: 20px;
+}
+
+.contato {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: #191919;
+}
+
+
+.contato button {
+    margin: 30px;
+}
+
+.contato .bloco {
+    background: #242424;
+    height: 700px;
+    width: 750px;
+    position: absolute;
+    top: 1600px;
+    left: 650px;
+    display: flex;
+    z-index: -1;
+    transform: rotate(-100deg);
+}
+
+.rodape {
+
+    height: 50px;
+    width: 100%;
+    background: #242424;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape a {
+    margin: 5px 20px;
+    font-size: 15px;
+}
+
+.rodape p {
+    margin: 5px 110px;
+    font-size: 15px;
 }
