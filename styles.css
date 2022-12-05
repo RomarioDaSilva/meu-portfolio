@@ -33,11 +33,18 @@ button {
     height: 30px;
     width: 130px;
     background: #ff0000;
-    color: #fff;
+    color: #d3d3d3;
     font-size: 17px;
     border: none;
     border-radius: 2px;
     padding: 2px;
+}
+
+button:hover {
+    background: #f00400;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
 }
 
 h2 {
@@ -169,6 +176,11 @@ hr {
 .competencias h2 {
     color: #fff;
     font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.competencias p {
+    color: #fff;
     margin-bottom: 30px;
 }
 
@@ -181,22 +193,24 @@ hr {
 
 .competencias .container .box {
     height: 280px;
-    width: 250px;
-    display: block;
-    padding-left: 30px;
-    padding-top: 40px;
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: #191919;
+    padding: 20px;
 }
 
-.competencias .container .box span {
-    font-size: 25px;
-    color: #f00400;
+.competencias .container .box img {
+    height: auto;
+    width: 50px;
 }
 
 .competencias .container .box h3 {
     color: #fff;
-    font-size: 25px;
-    margin-top: 10px;
+    font-size: 30px;
+    position: absolute;
 }
 
 .competencias .container .box p {
