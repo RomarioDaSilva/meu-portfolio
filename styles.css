@@ -38,6 +38,7 @@ button {
     border: none;
     border-radius: 2px;
     padding: 2px;
+    transition: 0.5s;
 }
 
 button:hover {
@@ -62,6 +63,13 @@ a {
     text-decoration: none;
     font-size: 24px;
     margin-top: 8px;
+    transition: 0.5s;
+}
+
+a:hover {
+    border-radius: 4px;
+    cursor: pointer;
+    border-bottom: solid 1px #f00400;
 }
 
 
@@ -137,6 +145,7 @@ hr {
 .container-g .inicio .container:hover {
     border: solid 1px #ff0000;
     border-radius: 10px;
+    background: #000000;
 }
 
 .inicio .container h3 {
@@ -195,11 +204,26 @@ hr {
     height: 280px;
     width: 330px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     background: #191919;
     padding: 20px;
+    transition: 0.7s;
+}
+
+.competencias .container .box:hover {
+    border: solid 1px #ff0000;
+    color: #FFF;
+    border-radius: 10px;
+    background: #131416;
+}
+
+.competencias .container .box div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .competencias .container .box img {
@@ -210,7 +234,6 @@ hr {
 .competencias .container .box h3 {
     color: #fff;
     font-size: 30px;
-    position: absolute;
 }
 
 .competencias .container .box p {
@@ -218,16 +241,25 @@ hr {
     font-size: 18px;
     margin-top: 8px;
     margin-bottom: 10px;
+    height: 100%;
 }
 
 .competencias .container .box-m {
     height: 170px;
-    width: 300px;
+    width: 370px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     background: #191919;
+    transition: 0.7s;
+}
+
+.competencias .container .box-m:hover {
+    border: solid 1px #ff0000;
+    color: #FFF;
+    border-radius: 10px;
+    background: #131416;
 }
 
 .competencias .container .caixa {
@@ -237,7 +269,7 @@ hr {
 
 .competencias .container .box-p {
     height: 80px;
-    width: 300px;
+    width: 370px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,6 +277,14 @@ hr {
     background: #191919;
     margin-bottom: 10px;
     margin-left: 10px;
+    transition: 0.7s;
+}
+
+.competencias .container .box-p:hover {
+    border: solid 1px #ff0000;
+    color: #FFF;
+    border-radius: 10px;
+    background: #131416;
 }
 
 .competencias .container .box-m span {
@@ -284,7 +324,7 @@ hr {
 }
 
 .projetos .container-projetos .box-projeto {
-    height: 220px;
+    height: 260px;
     width: 360px;
     display: flex;
     flex-direction: column;
@@ -292,6 +332,14 @@ hr {
     padding-top: 20px;
     background: #191919;
     margin-bottom: 20px;
+    transition: 0.7s;
+}
+
+.projetos .container-projetos .box-projeto:hover {
+    border: solid 1px #ff0000;
+    color: #FFF;
+    border-radius: 10px;
+    background: #131416;
 }
 
 .projetos .container-projetos .box-projeto img {
