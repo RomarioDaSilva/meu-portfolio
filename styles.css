@@ -8,15 +8,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200vh;
-    background-image: linear-gradient(
-        to top,
-        #1c1e20,
-        #131416,
-        #191a1d,
-        #141618,
-        #000000
-      );
+    background-image: linear-gradient(to top,
+            #1c1e20,
+            #131416,
+            #191a1d,
+            #141618,
+            #000000);
+}
+
+section {
+    max-width: 1220px;
+    height: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: #fff;
+    font-size: 40px;
 }
 
 h3 {
@@ -27,35 +38,6 @@ h3 {
 p {
     color: #d3d3d3;
     font-size: 20px;
-}
-
-button {
-    height: 30px;
-    width: 130px;
-    background: #ff0000;
-    color: #d3d3d3;
-    font-size: 17px;
-    border: none;
-    border-radius: 2px;
-    padding: 2px;
-    transition: 0.5s;
-}
-
-button:hover {
-    background: #f00400;
-    border-radius: 8px;
-    color: #fff;
-    cursor: pointer;
-}
-
-h2 {
-    color: #fff;
-    font-size: 40px;
-}
-
-img {
-    width: 300px;
-    height: 150px;
 }
 
 a {
@@ -73,13 +55,38 @@ a:hover {
 }
 
 
-section {
-    max-width: 1220px;
-    height: auto;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+button {
+    height: 30px;
+    width: 130px;
+    background: #ff0000;
+    color: #d3d3d3;
+    font-size: 17px;
+    border: none;
+    border-radius: 2px;
+    padding: 2px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ffbf00, #d97904, #ff3103, #640404, #ff3103, #d97904, #f2b705);
+    background-size: 400%;
+    animation: glow 8s linear infinite;
+    border-radius: 10px;
+}
+
+@keyframes glow {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+img {
+    width: 300px;
+    height: 150px;
 }
 
 hr {
@@ -87,7 +94,6 @@ hr {
     height: 1.5px;
     background-color: #d3d3d3;
 }
-
 
 .header {
     display: flex;
@@ -143,9 +149,10 @@ hr {
 }
 
 .container-g .inicio .container:hover {
-    border: solid 1px #ff0000;
+    border: solid 1px #f00400;
     border-radius: 10px;
     background: #000000;
+    transform: scale(1.05);
 }
 
 .inicio .container h3 {
@@ -217,6 +224,7 @@ hr {
     color: #FFF;
     border-radius: 10px;
     background: #131416;
+    transform: scale(1.05);
 }
 
 .competencias .container .box div {
@@ -260,6 +268,7 @@ hr {
     color: #FFF;
     border-radius: 10px;
     background: #131416;
+    transform: scale(1.05);
 }
 
 .competencias .container .caixa {
@@ -285,6 +294,7 @@ hr {
     color: #FFF;
     border-radius: 10px;
     background: #131416;
+    transform: scale(1.05);
 }
 
 .competencias .container .box-m span {
@@ -316,6 +326,10 @@ hr {
     margin-top: 20px;
 }
 
+.projetos p {
+    margin-bottom: 15px;
+}
+
 .projetos .container-projetos {
     display: grid;
     grid-template-columns: 500px 500px;
@@ -340,27 +354,45 @@ hr {
     color: #FFF;
     border-radius: 10px;
     background: #131416;
+    transform: scale(1.05);
 }
 
 .projetos .container-projetos .box-projeto img {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.contato {
-    height: 200px;
+.contatos {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.box-contato {
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 30px;
     background: #191919;
+    margin-top: 30px;
+    transition: 0.7s;
+}
+
+.box-contato:hover {
+    border: solid 1px #ff0000;
+    color: #FFF;
+    border-radius: 10px;
+    background: #131416;
+    transform: scale(1.05);
 }
 
 
-.contato button {
+.contatos button {
     margin: 30px;
 }
 
-.contato .bloco {
+.contatos .bloco {
     background: #242424;
     height: 700px;
     width: 750px;
@@ -372,8 +404,15 @@ hr {
     transform: rotate(-100deg);
 }
 
-.rodape {
+.contatos div img {
+    position: absolute;
+    top: 2450px;
+    z-index: -1;
+    width: auto;
+    height: 550px;
+}
 
+.rodape {
     height: 50px;
     width: 100%;
     background: #242424;
